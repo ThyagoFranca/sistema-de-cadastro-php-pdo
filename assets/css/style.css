@@ -1,0 +1,257 @@
+/**
+*
+* Author: Thyago França
+* Version: 1.0
+*
+**/
+
+* {
+	padding: 0;
+	margin-top: 0;
+	box-sizing: border-box;
+}
+
+/* trecho para corrigir bug no safari */
+.row:before, .row:after {
+    display: none!important;
+}
+
+html, body {
+	height: 100%;
+}
+
+/* para estilizar o scroll */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #999; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; 
+    border-radius: 10px;
+}
+
+/* hover no li a i */
+.app-main .app-sidebar ul li:hover a i {
+    color: #16c7ff;
+    animation: swing ease-in-out 0.5s 1 alternate; /* efeito swing */
+}
+
+.app-main__outer .app-main__inner .app-page-title .page-title-wrapper .wrap h3 i {
+    font-size: 25px;
+    color: #16c7ff;
+    vertical-align: sub;
+}
+
+.app-main__outer .app-main__inner .app-page-title .page-title-wrapper .wrap h3,
+.app-main__outer .app-main__inner .app-page-title .page-title-wrapper .wrap h3 #relogio {
+    font-size: 14px;
+    color: #495057;
+}
+
+#sign {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    background-image: linear-gradient(150deg, #03045e 40%, #023e8a 55%);
+}
+
+#esqueceu {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(150deg, #03045e 40%, #023e8a 55%);
+}
+
+#sign .logo,
+#esqueceu .logo {
+    width: 100px;
+    height: auto;
+}
+
+#sign .title {
+    padding: 50px 0;
+    font-size: 15px;
+    color: #ced4da;
+    text-align: center;
+}
+
+#sign #formLogin,
+#sign #formCadastro,
+#esqueceu #formEsqueceu {
+    width: 100%;
+    height: auto;
+    padding: 50px 25px;
+    background-color: #f7fafc;
+    border-radius: 5px; 
+}
+
+#sign #formLogin .desc, 
+#sign #formCadastro .desc,
+#esqueceu #formEsqueceu .desc  {
+    color: #8898aa;
+    font-size: 14px;
+}
+
+#sign .links,
+#esqueceu .links {
+    color: #ced4da;
+    font-size: 14px;
+}
+
+#sign .links:hover,
+#esqueceu .links:hover {
+    color: #a2aeb9;
+    text-decoration: none;
+}
+
+#sign #formLogin .btn-primary,
+#sign #formCadastro .btn-primary,
+#esqueceu #formEsqueceu .btn-primary {
+    padding: 8px 30px;
+    background-color: #5e72e4;
+    font-weight: bold;
+}
+
+#sign #formLogin .btn-primary:hover,
+#sign #formCadastro .btn-primary:hover,
+#esqueceu #formEsqueceu .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    color: #fff;
+}
+
+#sign #formLogin .form-group .input-group-text,
+#sign #formCadastro .form-group .input-group-text {
+    background-color: #fff;
+    border-right: 0;
+    color: #adb5bd;
+    font-size: 14px;
+}
+
+#esqueceu #formEsqueceu .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 21px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#sign #formLogin input[type=text],
+#sign #formCadastro input[type=text] {
+    height: calc(1.5em + 1rem + 2px);
+    padding: 23px 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #8898aa;
+}
+
+#sign #formLogin input[type=tel],
+#sign #formCadastro input[type=tel] {
+    height: calc(1.5em + 1rem + 2px);
+    padding: 23px 0px;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-left: 0;
+    color: #8898aa;
+}
+
+#sign #formLogin input[type=email],
+#sign #formCadastro input[type=email],
+#esqueceu #formEsqueceu input[type=email] {
+    height: calc(1.5em + 1rem + 2px);
+    padding: 23px 0px;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-left: 0;
+    color: #8898aa;
+}
+
+#sign #formLogin input[type=password],
+#sign #formCadastro input[type=password] {
+    height: calc(1.5em + 1rem + 2px);
+    padding: 23px 0px;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-left: 0;
+    color: #8898aa;
+}
+
+/* retira o outline do input */
+#sign #formLogin .form-control:focus,
+#sign #formCadastro .form-control:focus,
+#esqueceu #formEsqueceu .form-control:focus {
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(50,50,9,0), 3px 4px 8px rgba(94,114,228,.1);
+}
+
+#sign #formLogin .input-group-text:focus,
+#sign #formCadastro .input-group-text:focus,
+#esqueceu #formEsqueceu .input-group-text:focus {
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(50,50,9,0), 3px 4px 8px rgba(94,114,228,.1);
+}
+
+#sign #formLogin .form-group ::placeholder,
+#sign #formCadastro .form-group ::placeholder,
+#esqueceu #formEsqueceu .form-group ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #adb5bd;
+    font-size: 14px;
+}
+
+#sign #formLogin .form-group ::-ms-input-placeholder,
+#sign #formCadastro .form-group ::-ms-input-placeholder,
+#esqueceu #formEsqueceu .form-group ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #adb5bd;
+    font-size: 14px;
+}
+
+#rodape .copyright {
+    width: 100%;
+    height: auto;
+    padding: 15px 5px;
+    background-color: #212529;
+}
+
+#rodape .copyright .copy {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1920px) {
+	
+}
+
+@media only screen and (max-width: 1536px) {
+	
+}
+
+@media only screen and (max-width: 1366px) {
+	
+}
+
+@media only screen and (max-width: 1199px) {
+	
+}
+
+@media only screen and (max-width: 991px) {
+	
+}
+
+@media only screen and (max-width: 767px) {
+    
+}
